@@ -1,1 +1,1 @@
-Generated Paper: [PDF](https://jncraton.github.io/glitch-case-studies/main.pdf)
+Generated Paper: [PDF](https://jncraton.github.io/glitch-case-studies/main.pdf) [Zipped Source](https://jncraton.github.io/glitch-case-studies/paper.zip)
