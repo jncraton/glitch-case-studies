@@ -1,0 +1,1 @@
+Generated Paper: [PDF](https://jncraton.github.io/glitch-case-studies/main.pdf)
