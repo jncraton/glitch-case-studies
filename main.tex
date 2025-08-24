@@ -18,7 +18,7 @@
 \maketitle
 
 \begin{abstract}
-This work proposes using classic video game glitches as case studies to demonstrate key concepts in computer science and cybersecurity. An example case is provided and explored. The case is evaluated as a learning instrument as part of its use in an undergraduate computer science classroom.
+This work proposes using classic video game glitches as case studies to demonstrate key concepts in computer science and cybersecurity. An example case exploring one of the most popular glitches found in Pokemon is provided and explored. The case is evaluated as a learning instrument as part an undergraduate computer science class. Preliminary results from an undergraduate classroom suggest a statistically significant increase in post-test scores and strong qualitative feedback.
 \end{abstract}
 
 \section{Introduction}
@@ -65,7 +65,7 @@ As a the player character navigates the virtual work, they have opportunities to
 
 At one point in the game, the player is taught how to catch Pokemon by a character known simply as "Old Man". In order to demonstrate catching Pokemon, the game scripts what would normally be player actions in order to demo catching a Pokemon as a cutscene. A naive approach to this would leave the player's name as the one engaging in the encounter, so the players name must be temporarily replace by "Old Man" in memory. The software later needs to restore the player's correct name, so it must be stored elsewhere temporarily. The memory location used for temporary storage happens to be the location for some wild Pokemon encounter data, as it is not needed in the region where "Old Man" is found.
 
-After the demonstration cutscene, the player's name is restored, but the wild Pokemon encounter data is left in an invalid, uninitialized state. This data is not needed in the current region, and it is re-initialized as the player moves regions, so it does not generally cause an issue. However, if the player can move to a region that does not reinitialize this part of the wild Pokemon encounter data and trigger an appropriate wild Pokemon encounter, improperly initialized data will be used to select a Pokemon for the encounter. This can be exploited by immediately flying to Cinnabar Island.
+After the demonstration cutscene, the player's name is restored, but the wild Pokemon encounter data is left in an invalid, uninitialized state. While this data is accessible, the player's name was certainly never meant to be treated as wild Pokemon encounters. This data is not needed in the current region, and it is re-initialized as the player moves regions, so it does not generally cause an issue. However, if the player can move to a region that does not reinitialize this part of the wild Pokemon encounter data and trigger an appropriate wild Pokemon encounter, improperly initialized data will be used to select a Pokemon for the encounter. This can be exploited by immediately flying to Cinnabar Island.
 
 Cinnabar Island was not intended to include wild Pokemon encounters, so it does not re-initialize the wild Pokemon data. Data from the previous region, or in this case improperly initialized data, would be used for any encounters. Due to a separate bug, one small strip of water to the east of Cinnabar Island does allow encounters, and these will trigger the glitch.
 
@@ -83,11 +83,11 @@ From a cybersecurity standpoint, it can be valuable to consider the root cause o
 It is also possible take this example farther if desired. For example, what happens when we catch one of these glitch Pokemon? Do these encounters have any impact on the rest of the game? As it turns out, encounters with these invalid Pokemon trigger an invalid write and cause the quantity of the sixth item in a player's inventory to be set to 128 \cite{bulbapedia2010}. This can be used to demonstrate how seemingly benign software issues can sometimes to exploited to gain elevated privileges in unexpected ways.
 
 \section{Assessment}
-Students were pre-tested prior to the learning experience and post-tested afterwards. Quantitatively, a paired-samples t-test indicated a statistically significant increase in scores from the pre-test (M=70.37,SD=30.93) to the post-test (M=92.59,SD=14.70), with a p-value of p=0.0497.
+Students were pre-tested prior to the learning experience and post-tested afterwards. Quantitatively, a paired-samples t-test indicated a statistically significant increase in scores from the pre-test (M=70.3,SD=30.9) to the post-test (M=92.5,SD=14.7), with a p-value of p=0.049.
 
 Qualitatively, students reported being more actively connected to their learning experience via the case study. One student called it "very engaging", and another referred to it as being "much better than usual teaching".
 
-This assessment is admittedly limited. It measures the impact of a single case in a single relatively small classroom, but it does demonstrate that their may be potential to this type case study tool as a way to enhance student engagement and learning.
+This assessment is admittedly limited. It measures the impact of a single case in a single relatively small classroom, but it does demonstrate that their may be potential to this type case study tool as a way to enhance student engagement and learning. While limited in scope, the significant increase in scores and positive qualitative feedback suggest that this method holds promise for enhancing student engagement and learning.
 
 \secion{Discussion and Future Work}
 
