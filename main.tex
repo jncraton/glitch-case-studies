@@ -56,6 +56,21 @@ This glitch induces the system to access and use memory that has not been proper
     \label{fig:missingno}
 \end{minipage}
 
+As a the player character navigates the virtual work, they have opportunities to discover and battle wild Pokemon. The Pokemon faced are drawn from list that is populated by game region, so that players are presented with access to new varieties as they progress through areas of the game.
+
+At one point in the game, the player is taught how to catch Pokemon by a character known simply as "Old Man". It order to demonstrate catching Pokemon, the game scripts what would normally be player actions in order to demo catching a Pokemon as a cutscene. A naive approach to this would leave the player's name as the one engaging in the encounter, so the players name must be temporarily replace by "Old Man" in memory. The software later needs to restore the player's correct name, so it must be stored elsewhere temporarily. The memory location used for temporary storage happens to be the location for some wild Pokemon encounter data, as it is not needed in the region where "Old Man" is found.
+
+After the demonstration cutscene, the player's name is restored, but the wild Pokemon encounter data is left in an invalid, uninitialized state. This data is not needed in the current region, and it is re-initialized as the player moves regions, so it does not generally cause an issue. However, if the player can move to a region that does not reinitilze this part of the wild Pokemon encounter data and trigger an appropriate wild Pokemon encounter, improperly intialized data will be used to select a Pokemon for the encounter. This can be exploited by immediately flying to Cinnebar Island.
+
+Cinnebar Island was not intended to include wild Pokemon encounters, so it does not re-initialize the wild Pokemon data. Data from the previous region, or in this case improperly initialized data, would be used for any encounters. Due to a separate bug, one small strip of water to the east of Cinnebar Island does allow encounters, and these will trigger the glitch.
+
+\noindent % Prevents indentation
+\begin{minipage}{\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{surfing.png}
+    \label{fig:surfing}
+\end{minipage}
+
 From a cybersecurity standpoint, it can be valuable to consider the root cause of this issue. Perhaps it could be mapped to an appropriate framework, such as identifying the cause as "Use of Uninitialized Resources" (CWE-908) \cite{mitre2012}. From there, learners can discuss and explore potential mitigations for this sort of software weakness.
 
 \section{Findings}
