@@ -56,12 +56,11 @@ The case proposed in this paper involves a well-known glitch colloquially referr
 
 This glitch induces the system to access and use memory that has not been properly initialized. In particular, it requires the player character in the game to engage in a wild Pokemon battle when the wild Pokemon data is not properly initialized. This allows the player to encounter and capture invalid or "glitch" Pokemon as shown below:
 
-\noindent % Prevents indentation
-\begin{minipage}{\textwidth}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.4\textwidth]{missingno.png}
-    \label{fig:missingno}
-\end{minipage}
+    \caption{Engagement with MissingNo glitch Pokemon}
+\end{figure}
 
 As the player character navigates the virtual world, they have opportunities to discover and battle wild Pokemon. The Pokemon faced are drawn from a list that is populated by game region, so that players are presented with access to new varieties as they progress through areas of the game.
 
@@ -71,12 +70,11 @@ After the demonstration cutscene, the player's name is restored, but the wild Po
 
 Cinnabar Island was not intended to include wild Pokemon encounters, so it does not re-initialize the wild Pokemon data. Data from the previous region, or in this case improperly initialized data, would be used for any encounters. Due to a separate bug, one small strip of water to the east of Cinnabar Island does allow encounters, and these will trigger the glitch.
 
-\noindent % Prevents indentation
-\begin{minipage}{\textwidth}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.4\textwidth]{surfing.png}
-    \label{fig:surfing}
-\end{minipage}
+    \caption{Triggering an engagement near Cinnabar Island}
+\end{figure}
 
 This glitch study provides numerous opportunities for learning. A real interactive example like this is multifaceted and can be explored in real time. There are several issues that work together to allow the final issue, showing the importance of defense in depth.
 
