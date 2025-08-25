@@ -1,1 +1,6 @@
-Generated Paper: [PDF](https://jncraton.github.io/glitch-case-studies/main.pdf) [Zipped Source](https://jncraton.github.io/glitch-case-studies/paper.zip)
+# Case Studies from Video Game Glitches
+
+## Generated Paper
+
+- [PDF](https://jncraton.github.io/glitch-case-studies/main.pdf)
+- [Zipped Source](https://jncraton.github.io/glitch-case-studies/paper.zip)
