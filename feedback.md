@@ -2,7 +2,9 @@
 
 - [ ] I greatly enjoyed reading this paper - and would have liked to hear more about the concepts in the paper, specifically how the glitch was introduced, and the specific situation it was used on (cyber security perhaps?)
 
-- [ ] A pre-post test is mentioned in this paper, but I am curious was the test - and the general scores before and after. This data will be helpful in reflecting on the experience. Perhaps I am disconnected from the students, but I do wonder how much the original Pokémon is relevant to students in today's classrooms - it's almost 30 years old now.
+- [x] A pre-post test is mentioned in this paper, but I am curious was the test - and the general scores before and after. This data will be helpful in reflecting on the experience.
+
+- [ ] Perhaps I am disconnected from the students, but I do wonder how much the original Pokémon is relevant to students in today's classrooms - it's almost 30 years old now.
 
 ## Reviewer 2
 
@@ -22,7 +24,7 @@ Overall well written with focused purpose appropriate for the conference; howeve
 
 Suggestions for improvement:
 
-- [ ] 1. Abstract: Provide context for the last sentence. What were the post (vs. pre) test scores testing and what does strong qualitative feedback mean (assuming a positive context then?)
+- [x] 1. Abstract: Provide context for the last sentence. What were the post (vs. pre) test scores testing and what does strong qualitative feedback mean (assuming a positive context then?)
 
 - [ ] 2. Introduction, paragraph 4: Define glitch in this context when concept first introduced.
 
@@ -36,6 +38,6 @@ Suggestions for improvement:
 
 - [ ] 7. Example Case, p. 4, last paragraph: Again, if you have never played the game, then an "inventory to be set to 128" has no meaning. Provide context here.
 
-- [ ] 8. Assessment: What is the sample size? Are the paired samples t-test appropriate given the sample size, normally distributed? If not, was a non-parametric test like Wilcoxon Rank Sum used? Statistical significance is stated but the methodology should state what threshold that is determined at and what hypothesis is being tested. Based on information presented the results are barely significant at the 95% confidence level. It is also very unclear what was being tested. What was the assessment question(s)?
+- [x] 8. Assessment: What is the sample size? Are the paired samples t-test appropriate given the sample size, normally distributed? If not, was a non-parametric test like Wilcoxon Rank Sum used? Statistical significance is stated but the methodology should state what threshold that is determined at and what hypothesis is being tested. Based on information presented the results are barely significant at the 95% confidence level. It is also very unclear what was being tested. What was the assessment question(s)?
 
 - [ ] 9. References: Might include a couple more references from the past decade.

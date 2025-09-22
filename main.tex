@@ -18,7 +18,7 @@
 \maketitle
 
 \begin{abstract}
-This work explores using classic video game glitches as case studies to demonstrate key concepts in computer science and cybersecurity. An example case from one of the most popular glitches found in Pokémon is explored. The case is evaluated as a learning instrument in an undergraduate computer science class. Preliminary results from an undergraduate classroom suggest a statistically significant increase in post-test scores and strong qualitative feedback.
+This work explores using classic video game glitches as case studies to demonstrate key concepts in computer science and cybersecurity. An example case from one of the most popular glitches found in Pokémon is explored. The case is evaluated as a learning instrument in an undergraduate computer science class and received positive qualitative feedback from students.
 \end{abstract}
 
 \section{Introduction}
@@ -100,11 +100,13 @@ From a cybersecurity standpoint, it can be valuable to consider the root cause o
 It is also possible to take this example farther if desired. For example, what happens when we catch one of these glitch Pokémon? Do these encounters have any impact on the rest of the game? As it turns out, encounters with these invalid Pokémon trigger an invalid write and cause the quantity of the sixth item in a player's inventory to be set to 128 \cite{bulbapedia2010}. This can be used to demonstrate how seemingly benign software issues can sometimes be exploited to gain elevated privileges in unexpected ways.
 
 \section{Assessment}
-Students were pre-tested prior to the learning experience and post-tested afterwards. Quantitatively, a paired-samples t-test indicated a statistically significant increase in scores from the pre-test (M=70.3,SD=30.9) to the post-test (M=92.5,SD=14.7), with a p-value of p=0.049.
+This case study was situated within a larger 50-minute learning session covering the value of proper exception handling. At the start of the session, students were given the opportunity to take a short multiple choice quiz testing knowledge of this concept. Following the session, students were allowed to retake the same assessment. This quiz included three multiple questions allowing students to demonstrate that they understood the key points from the session.
+
+An analysis of the quiz results showed that the paired differences contained multiple ties and deviated from normality, so a Wilcoxon signed-rank test was conducted to examine whether post-test scores were greater than pre-test scores for the nine participants. The mean difference was 22.22 (SD = 28.87). The Wilcoxon signed-rank test indicated a non-significant trend toward higher post-test scores, W = 10.00, p = .063 (one-tailed). A paired-samples t-test indicated a statistically significant increase in scores from the pre-test (M=70.3,SD=30.9) to the post-test (M=92.5,SD=14.7), with a p-value of p=0.049, but this result should be interpreted with caution due to violation of the t‑test normality assumption.
 
 Qualitatively, students reported being more actively connected to their learning experience via the case study. One student called it ``very engaging'', and another referred to it as being ``much better than usual teaching''.
 
-This assessment is admittedly limited. It measures the impact of a single case in a single relatively small classroom, but it does demonstrate that there may be potential to this type case study tool as a way to enhance student engagement and learning. While limited in scope, the significant increase in scores and positive qualitative feedback suggest that this method holds promise for enhancing student engagement and learning.
+This assessment is admittedly limited. It measures the impact of a single case in a single relatively small classroom, but it does demonstrate that there may be potential to this type case study tool as a way to enhance student engagement and learning. The positive qualitative feedback suggests that this method holds promise for enhancing student engagement and learning.
 
 \section{Discussion and Future Work}
 
