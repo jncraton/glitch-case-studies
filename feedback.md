@@ -14,7 +14,7 @@ Suggested Improvements/Questions:
 
 - [ ] Some of this could be ameliorated by having more discussion of "case studies" as teaching concept themselves in the "Theoretical Foundation" section.
 
-- [ ] Small quibble, but Pokémon should be spelled correctly, with the special character above the e.
+- [x] Small quibble, but Pokémon should be spelled correctly, with the special character above the e.
 
 ## Reviewer 3
 

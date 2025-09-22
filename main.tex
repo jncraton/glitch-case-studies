@@ -18,7 +18,7 @@
 \maketitle
 
 \begin{abstract}
-This work explores using classic video game glitches as case studies to demonstrate key concepts in computer science and cybersecurity. An example case from one of the most popular glitches found in Pokemon is explored. The case is evaluated as a learning instrument in an undergraduate computer science class. Preliminary results from an undergraduate classroom suggest a statistically significant increase in post-test scores and strong qualitative feedback.
+This work explores using classic video game glitches as case studies to demonstrate key concepts in computer science and cybersecurity. An example case from one of the most popular glitches found in Pokémon is explored. The case is evaluated as a learning instrument in an undergraduate computer science class. Preliminary results from an undergraduate classroom suggest a statistically significant increase in post-test scores and strong qualitative feedback.
 \end{abstract}
 
 \section{Introduction}
@@ -54,17 +54,17 @@ One desirable aspect of emulation technology is the ability to pause, slow down,
 \section{Example Case}
 The case explored in this paper involves a well-known glitch colloquially referred to as the ``Old man glitch''. It is well understood and its underlying mechanics have already been described \cite{bulbapedia2005} \cite{scrumpy2016missing}. In fact, this glitch has even been used within computer science courses \cite{rjwalls2022}.
 
-This glitch causes the system to access and use memory that has not been properly initialized. In particular, it requires the player character in the game to engage in a wild Pokemon battle when the wild Pokemon data is not properly initialized. This allows the player to encounter and capture invalid or ``glitch'' Pokemon as shown below:
+This glitch causes the system to access and use memory that has not been properly initialized. In particular, it requires the player character in the game to engage in a wild Pokémon battle when the wild Pokémon data is not properly initialized. This allows the player to encounter and capture invalid or ``glitch'' Pokémon as shown below:
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.4\textwidth]{missingno.png}
-    \caption{Engagement with MissingNo glitch Pokemon}
+    \caption{Engagement with MissingNo glitch Pokémon}
 \end{figure}
 
-As the player character navigates the virtual world, they have opportunities to discover and battle wild Pokemon. The Pokemon faced are drawn from a list that is populated by game region, so that players are presented with access to new varieties as they progress through areas of the game.
+As the player character navigates the virtual world, they have opportunities to discover and battle wild Pokémon. The Pokémon faced are drawn from a list that is populated by game region, so that players are presented with access to new varieties as they progress through areas of the game.
 
-At one point in the game, the player is taught how to catch Pokemon by a character known simply as ``Old Man''. In order to demonstrate catching Pokemon, the game scripts what would normally be player actions in order to demo catching a Pokemon as a cutscene. A naive approach to this would leave the player's name as the one engaging in the encounter, so the player's name must be temporarily replaced by ``Old Man'' in memory. The software later needs to restore the player's correct name, so it must be stored elsewhere temporarily. The memory location used for temporary storage happens to be the location for some wild Pokemon encounter data, as it is not needed in the region where ``Old Man'' is found.
+At one point in the game, the player is taught how to catch Pokémon by a character known simply as ``Old Man''. In order to demonstrate catching Pokémon, the game scripts what would normally be player actions in order to demo catching a Pokémon as a cutscene. A naive approach to this would leave the player's name as the one engaging in the encounter, so the player's name must be temporarily replaced by ``Old Man'' in memory. The software later needs to restore the player's correct name, so it must be stored elsewhere temporarily. The memory location used for temporary storage happens to be the location for some wild Pokémon encounter data, as it is not needed in the region where ``Old Man'' is found.
 
 \begin{table}[h!]
 \centering
@@ -72,20 +72,20 @@ At one point in the game, the player is taught how to catch Pokemon by a charact
 Address &              Purpose &   Value \\
    d887 & Grass Encounter Rate & name[0] \\
    d888 &              Level 1 & name[1] \\
-   d889 &            Pokemon 1 & name[2] \\
+   d889 &            Pokémon 1 & name[2] \\
    d88a &              Level 2 & name[3] \\
-   d88b &            Pokemon 2 & name[4] \\
+   d88b &            Pokémon 2 & name[4] \\
    d88c &              Level 3 & name[5] \\
-   d88d &            Pokemon 3 & name[6] \\
+   d88d &            Pokémon 3 & name[6] \\
    d88e &              Level 4 &    0x80 \\
-   d88f &            Pokemon 4 &    0x00 \\
+   d88f &            Pokémon 4 &    0x00 \\
 \end{tabular}
-\caption{Pokemon encounter table values overwritten by player's name}
+\caption{Pokémon encounter table values overwritten by player's name}
 \end{table}
 
-After the demonstration cutscene, the player's name is restored, but the wild Pokemon encounter data is left in an invalid, uninitialized state. While this data is accessible, the player's name was certainly never meant to be treated as wild Pokemon encounters. This data is not needed in the current region, and it is re-initialized as the player moves regions, so it does not generally cause an issue. However, if the player can move to a region that does not re-initialize this part of the wild Pokemon encounter data and trigger an appropriate wild Pokemon encounter, improperly initialized data will be used to select a Pokemon for the encounter. This can be exploited by immediately flying to Cinnabar Island.
+After the demonstration cutscene, the player's name is restored, but the wild Pokémon encounter data is left in an invalid, uninitialized state. While this data is accessible, the player's name was certainly never meant to be treated as wild Pokémon encounters. This data is not needed in the current region, and it is re-initialized as the player moves regions, so it does not generally cause an issue. However, if the player can move to a region that does not re-initialize this part of the wild Pokémon encounter data and trigger an appropriate wild Pokémon encounter, improperly initialized data will be used to select a Pokémon for the encounter. This can be exploited by immediately flying to Cinnabar Island.
 
-Cinnabar Island was not intended to include wild Pokemon encounters, so it does not re-initialize the wild Pokemon data. Data from the previous region, or in this case improperly initialized data, would be used for any encounters. Due to a separate bug, one small strip of water to the east of Cinnabar Island does allow encounters, and these will trigger the glitch.
+Cinnabar Island was not intended to include wild Pokémon encounters, so it does not re-initialize the wild Pokémon data. Data from the previous region, or in this case improperly initialized data, would be used for any encounters. Due to a separate bug, one small strip of water to the east of Cinnabar Island does allow encounters, and these will trigger the glitch.
 
 \begin{figure}[h!]
     \centering
@@ -97,7 +97,7 @@ This glitch study provides numerous opportunities for learning. A real interacti
 
 From a cybersecurity standpoint, it can be valuable to consider the root cause of this issue. Perhaps it could be mapped to an appropriate framework, such as identifying the cause as ``Use of Uninitialized Resources'' (CWE-908) \cite{mitre2012}. From there, learners can discuss and explore potential mitigations for this sort of software weakness.
 
-It is also possible to take this example farther if desired. For example, what happens when we catch one of these glitch Pokemon? Do these encounters have any impact on the rest of the game? As it turns out, encounters with these invalid Pokemon trigger an invalid write and cause the quantity of the sixth item in a player's inventory to be set to 128 \cite{bulbapedia2010}. This can be used to demonstrate how seemingly benign software issues can sometimes be exploited to gain elevated privileges in unexpected ways.
+It is also possible to take this example farther if desired. For example, what happens when we catch one of these glitch Pokémon? Do these encounters have any impact on the rest of the game? As it turns out, encounters with these invalid Pokémon trigger an invalid write and cause the quantity of the sixth item in a player's inventory to be set to 128 \cite{bulbapedia2010}. This can be used to demonstrate how seemingly benign software issues can sometimes be exploited to gain elevated privileges in unexpected ways.
 
 \section{Assessment}
 Students were pre-tested prior to the learning experience and post-tested afterwards. Quantitatively, a paired-samples t-test indicated a statistically significant increase in scores from the pre-test (M=70.3,SD=30.9) to the post-test (M=92.5,SD=14.7), with a p-value of p=0.049.
