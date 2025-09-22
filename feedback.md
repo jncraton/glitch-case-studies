@@ -18,7 +18,7 @@ Suggested Improvements/Questions:
 
 ## Reviewer 3
 
-- [ ] Overall well written with focused purpose appropriate for the conference; however some issues like incomplete explanations, particularly of the methodology employed and clarity in the gaming example. The paper starts out very strong with a very nice premise, but then seems a bit disorganized in the latter half.
+Overall well written with focused purpose appropriate for the conference; however some issues like incomplete explanations, particularly of the methodology employed and clarity in the gaming example. The paper starts out very strong with a very nice premise, but then seems a bit disorganized in the latter half.
 
 Suggestions for improvement:
 
