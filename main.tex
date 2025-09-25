@@ -103,7 +103,8 @@ This glitch study provides numerous opportunities for learning. A real interacti
     \item What assumptions in the original code are violated by this interaction?
     \item What boundary checks, validation, or safer memory-management practices have prevented this glitch?
     \item What trade-offs would mitigations incur?
-    \item In Python, what exceptions would you expect if code attempted to use an unexpected value (e.g., indexing with an out-of-range or wrong-type value), and how would catching them prevent crashes or corrupted state?
+    \item In Python, what exceptions would you expect if code attempted to use an unexpected value?
+    \item How would catching these exceptions prevent crashes or corrupted state?
 \end{itemize}
 
 From a cybersecurity standpoint, it can be valuable to consider the root cause of this issue. Perhaps it could be mapped to an appropriate framework, such as identifying the cause as ``Use of Uninitialized Resources'' (CWE-908) \cite{mitre2012}. From there, learners can discuss and explore potential mitigations for this sort of software weakness.
