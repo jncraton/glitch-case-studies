@@ -30,7 +30,7 @@ Suggestions for improvement:
 
 - [x] 3. Methodology, paragraph 2: Provide a couple brief examples of "various hardware tools and methods to accomplish this"
 
-- [ ] 4. Methodology: The actual methodology is not clear. The paragraph provides information essentially on how the data will be acquired (i.e., the gaming glitch), but not what methods will be used and for what purpose. What happens or should happen after the gaming glitch is identified? What are the students going to do and what are the intended learning outcomes? The "Assessment" section---use the methodology section to set-up the information presented later with statistical testing.
+- [x] 4. Methodology: The actual methodology is not clear. The paragraph provides information essentially on how the data will be acquired (i.e., the gaming glitch), but not what methods will be used and for what purpose. What happens or should happen after the gaming glitch is identified? What are the students going to do and what are the intended learning outcomes? The "Assessment" section---use the methodology section to set-up the information presented later with statistical testing.
 
 - [x] 5. Example Case: Perhaps too rudimentary for this audience (?), but suggest providing 1-2 sentence context at the beginning of this section about the Pokémon game, how it runs/purpose, backstory, etc. Otherwise the subsequent paragraphs are a bit harder to follow if you are not intimately familiar with this game. More modern Pokémon GO seem more familiar yet distinctly different than this retro system.
     - [x] (IMO---Glitch Case Study better title)
