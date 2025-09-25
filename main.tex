@@ -97,7 +97,14 @@ Cinnabar Island was not intended to include wild Pokémon encounters, so it does
     \caption{Triggering an engagement near Cinnabar Island}
 \end{figure}
 
-This glitch study provides numerous opportunities for learning. A real interactive example like this is multifaceted and can be explored in real time. There are several issues that work together to allow the final issue, showing the importance of defense in depth.
+This glitch study provides numerous opportunities for learning. A real interactive example like this is multifaceted and can be explored in real time. There are several issues that work together to allow the final issue, showing the importance of defense in depth. The instructor can pose a number of guiding questions as this point:
+
+\begin{itemize}
+    \item What assumptions in the original code are violated by this interaction?
+    \item What boundary checks, validation, or safer memory-management practices have prevented this glitch?
+    \item What trade-offs would mitigations incur?
+    \item In Python, what exceptions would you expect if code attempted to use an unexpected value (e.g., indexing with an out-of-range or wrong-type value), and how would catching them prevent crashes or corrupted state?
+\end{itemize}
 
 From a cybersecurity standpoint, it can be valuable to consider the root cause of this issue. Perhaps it could be mapped to an appropriate framework, such as identifying the cause as ``Use of Uninitialized Resources'' (CWE-908) \cite{mitre2012}. From there, learners can discuss and explore potential mitigations for this sort of software weakness.
 
