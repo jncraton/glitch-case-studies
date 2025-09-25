@@ -35,7 +35,7 @@ Suggestions for improvement:
 - [x] 5. Example Case: Perhaps too rudimentary for this audience (?), but suggest providing 1-2 sentence context at the beginning of this section about the Pokémon game, how it runs/purpose, backstory, etc. Otherwise the subsequent paragraphs are a bit harder to follow if you are not intimately familiar with this game. More modern Pokémon GO seem more familiar yet distinctly different than this retro system.
     - [x] (IMO---Glitch Case Study better title)
 
-- [ ] 6. Example Case, p. 4, third paragraph: Discuss the meaning behind "defense in depth"
+- [x] 6. Example Case, p. 4, third paragraph: Discuss the meaning behind "defense in depth"
 
 - [x] 7. Example Case, p. 4, last paragraph: Again, if you have never played the game, then an "inventory to be set to 128" has no meaning. Provide context here.
 
