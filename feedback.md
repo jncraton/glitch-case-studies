@@ -10,7 +10,7 @@
 
 Suggested Improvements/Questions:
 
-- [ ] I would like to see more discussion about the classroom and replicating this for other educators. While there is talk about how to get the game running, there is no real discussion on preparing students to understand the game itself, "Pokémon" and the core concepts needed to grasp why the glitch is significant. Perhaps this is not important, but that needs clarified.
+- [x] I would like to see more discussion about the classroom and replicating this for other educators. While there is talk about how to get the game running, there is no real discussion on preparing students to understand the game itself, "Pokémon" and the core concepts needed to grasp why the glitch is significant. Perhaps this is not important, but that needs clarified.
 
 - [ ] Similarly, the paper does not discuss any direction that the professor may give - are there direct questions that they are posing to the students? How much time is dedicated to this case study? I am interested in the specifics.
 
