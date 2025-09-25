@@ -1,6 +1,6 @@
 ## Reviewer 1
 
-- [ ] I greatly enjoyed reading this paper - and would have liked to hear more about the concepts in the paper, specifically how the glitch was introduced, and the specific situation it was used on (cyber security perhaps?)
+- [x] I greatly enjoyed reading this paper - and would have liked to hear more about the concepts in the paper, specifically how the glitch was introduced, and the specific situation it was used on (cyber security perhaps?)
 
 - [x] A pre-post test is mentioned in this paper, but I am curious was the test - and the general scores before and after. This data will be helpful in reflecting on the experience.
 
