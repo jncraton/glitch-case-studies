@@ -37,7 +37,7 @@ Suggestions for improvement:
 
 - [ ] 6. Example Case, p. 4, third paragraph: Discuss the meaning behind "defense in depth"
 
-- [ ] 7. Example Case, p. 4, last paragraph: Again, if you have never played the game, then an "inventory to be set to 128" has no meaning. Provide context here.
+- [x] 7. Example Case, p. 4, last paragraph: Again, if you have never played the game, then an "inventory to be set to 128" has no meaning. Provide context here.
 
 - [x] 8. Assessment: What is the sample size? Are the paired samples t-test appropriate given the sample size, normally distributed? If not, was a non-parametric test like Wilcoxon Rank Sum used? Statistical significance is stated but the methodology should state what threshold that is determined at and what hypothesis is being tested. Based on information presented the results are barely significant at the 95% confidence level. It is also very unclear what was being tested. What was the assessment question(s)?
 
