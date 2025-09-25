@@ -28,7 +28,7 @@ Suggestions for improvement:
 
 - [ ] 2. Introduction, paragraph 4: Define glitch in this context when concept first introduced.
 
-- [ ] 3. Methodology, paragraph 2: Provide a couple brief examples of "various hardware tools and methods to accomplish this"
+- [x] 3. Methodology, paragraph 2: Provide a couple brief examples of "various hardware tools and methods to accomplish this"
 
 - [ ] 4. Methodology: The actual methodology is not clear. The paragraph provides information essentially on how the data will be acquired (i.e., the gaming glitch), but not what methods will be used and for what purpose. What happens or should happen after the gaming glitch is identified? What are the students going to do and what are the intended learning outcomes? The "Assessment" section---use the methodology section to set-up the information presented later with statistical testing.
 
