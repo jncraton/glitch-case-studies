@@ -26,7 +26,7 @@ Suggestions for improvement:
 
 - [x] 1. Abstract: Provide context for the last sentence. What were the post (vs. pre) test scores testing and what does strong qualitative feedback mean (assuming a positive context then?)
 
-- [ ] 2. Introduction, paragraph 4: Define glitch in this context when concept first introduced.
+- [x] 2. Introduction, paragraph 4: Define glitch in this context when concept first introduced.
 
 - [x] 3. Methodology, paragraph 2: Provide a couple brief examples of "various hardware tools and methods to accomplish this"
 
