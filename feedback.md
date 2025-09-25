@@ -4,7 +4,7 @@
 
 - [x] A pre-post test is mentioned in this paper, but I am curious was the test - and the general scores before and after. This data will be helpful in reflecting on the experience.
 
-- [ ] Perhaps I am disconnected from the students, but I do wonder how much the original Pokémon is relevant to students in today's classrooms - it's almost 30 years old now.
+- [x] Perhaps I am disconnected from the students, but I do wonder how much the original Pokémon is relevant to students in today's classrooms - it's almost 30 years old now.
 
 ## Reviewer 2
 
@@ -32,7 +32,7 @@ Suggestions for improvement:
 
 - [ ] 4. Methodology: The actual methodology is not clear. The paragraph provides information essentially on how the data will be acquired (i.e., the gaming glitch), but not what methods will be used and for what purpose. What happens or should happen after the gaming glitch is identified? What are the students going to do and what are the intended learning outcomes? The "Assessment" section---use the methodology section to set-up the information presented later with statistical testing.
 
-- [ ] 5. Example Case: Perhaps too rudimentary for this audience (?), but suggest providing 1-2 sentence context at the beginning of this section about the Pokémon game, how it runs/purpose, backstory, etc. Otherwise the subsequent paragraphs are a bit harder to follow if you are not intimately familiar with this game. More modern Pokémon GO seem more familiar yet distinctly different than this retro system.
+- [x] 5. Example Case: Perhaps too rudimentary for this audience (?), but suggest providing 1-2 sentence context at the beginning of this section about the Pokémon game, how it runs/purpose, backstory, etc. Otherwise the subsequent paragraphs are a bit harder to follow if you are not intimately familiar with this game. More modern Pokémon GO seem more familiar yet distinctly different than this retro system.
     - [x] (IMO---Glitch Case Study better title)
 
 - [ ] 6. Example Case, p. 4, third paragraph: Discuss the meaning behind "defense in depth"
