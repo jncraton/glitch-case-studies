@@ -41,4 +41,4 @@ Suggestions for improvement:
 
 - [x] 8. Assessment: What is the sample size? Are the paired samples t-test appropriate given the sample size, normally distributed? If not, was a non-parametric test like Wilcoxon Rank Sum used? Statistical significance is stated but the methodology should state what threshold that is determined at and what hypothesis is being tested. Based on information presented the results are barely significant at the 95% confidence level. It is also very unclear what was being tested. What was the assessment question(s)?
 
-- [ ] 9. References: Might include a couple more references from the past decade.
+- [x] 9. References: Might include a couple more references from the past decade.
