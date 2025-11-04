@@ -116,6 +116,10 @@ date: November 14, 2025
 - Its simple implementation led to well-known, exploitable glitches
 - The case explores the well-known "Old man glitch"
 
+---
+
+![Missingno](missingno.png){height=540px}
+
 ## Glitch Mechanism
 
 - The glitch causes the system to access uninitialized memory
@@ -165,6 +169,10 @@ date: November 14, 2025
 - Cinnabar Island was not intended to include wild Pokemon encounters
 - It does not re-initialize the wild Pokemon data
 - A small strip of water to the east allows encounters, triggering the glitch
+
+---
+
+![Surfing](surfing.png){height=540px}
 
 ## Learning Opportunities
 
