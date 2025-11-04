@@ -6,6 +6,6 @@ This work explores the use of classic video game glitches as multifaceted case s
 
 ## Resources
 
-- [PDF](https://jncraton.github.io/glitch-case-studies/main.pdf)
-- [Zipped Source](https://jncraton.github.io/glitch-case-studies/paper.zip)
+- [Paper PDF](https://jncraton.github.io/glitch-case-studies/main.pdf)
+- [Paper Zipped LaTeX Source](https://jncraton.github.io/glitch-case-studies/paper.zip)
 - [Presentation Deck](https://jncraton.github.io/glitch-case-studies/slides.html)
