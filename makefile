@@ -22,3 +22,4 @@ install-deb-deps:
 
 clean:
 	git clean -f
+	rm -rf reveal.js
