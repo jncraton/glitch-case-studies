@@ -2,6 +2,8 @@
 title: Video Game Glitches as Case Studies
 author: Jon Craton
 date: November 14, 2025
+parallaxBackgroundImage: bg.png
+parallaxBackgroundSize: 4096px 4096px
 ...
 
 # Engagement
