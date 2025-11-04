@@ -227,7 +227,3 @@ date: November 14, 2025
 - Additional cases could be crafted and shared for use in other classrooms
 - Cases could be evaluated more rigorously and broadly
 - Studies could compare this approach against other teaching methods
-
-## Mario Example
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XyCFIxthQDQ?si=iJX0B6uSrrtt_G0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
