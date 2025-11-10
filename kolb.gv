@@ -2,17 +2,17 @@ digraph Kolb {
         layout=circo;
         rankdir=LR;
         bgcolor="transparent";
-        node [shape=box, style="filled,rounded", fillcolor=lightgray];
+        node [shape=box, style="filled,rounded", fontsize=16,fontname="sans-serif",colorscheme=pastel14];
     
         // Nodes for the four stages
-        AC [label="Abstract Conceptualization"];
-        AE [label="Active Experimentation"];
-        CE [label="Concrete Experience"];
-        RO [label="Reflective Observation"];
+        AC [label="Abstract\nConceptualization", color=1];
+        AE [label="Active\nExperimentation", color=2];
+        CE [label="Concrete\nExperience", color=3];
+        RO [label="Reflective\nObservation", color=4];
     
         // Edges to form the cycle
-        CE -> RO;
-        RO -> AC;
-        AC -> AE;
-        AE -> CE;
+        AC:w -> AE:s;
+        AE:n -> CE:w;
+        CE:e -> RO:n;
+        RO:s -> AC:e;
     }
