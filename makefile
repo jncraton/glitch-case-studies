@@ -3,10 +3,13 @@ all: main.pdf paper.zip index.html slides.html
 main.pdf: main.tex
 	latexmk -pdf $<
 
+%.svg: %.gv
+	dot -Tsvg $< -o $@
+
 paper.zip: main.tex refs.bib
 	zip $@ $^
 
-slides.html: slides.md reveal.js
+slides.html: slides.md reveal.js kolb.svg
 	pandoc --mathjax -t revealjs --template=revealjs-template.html --standalone -V revealjs-url=reveal.js -V theme:white -V history=true -o $@ $<
 	qrencode "https://jncraton.github.io/glitch-case-studies/slides.html" -o "qr.png"
 

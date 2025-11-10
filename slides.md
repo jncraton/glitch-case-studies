@@ -68,6 +68,10 @@ parallaxBackgroundSize: 4096px 4096px
 - We then reflect on it and develop an abstract conceptualization
 - Finally, we engage in active experimentation to test assumptions
 
+---
+
+![Kolb's Learning Cycle](kolb.svg){height=540px}
+
 ## Glitches and Learning
 
 - Glitches provide an ideal platform to craft Kolb's learning cycle
