@@ -1,6 +1,7 @@
 digraph Kolb {
         layout=circo;
         rankdir=LR;
+        bgcolor="transparent";
         node [shape=box, style="filled,rounded", fillcolor=lightgray];
     
         // Nodes for the four stages
