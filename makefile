@@ -24,7 +24,7 @@ spellcheck:
 	aspell --home-dir=. --check --dont-backup main.tex
 
 install-deb-deps:
-	sudo apt install texlive texlive-latex-extra texlive-bibtex-extra latexmk biber pandoc qrencode
+	sudo apt install texlive texlive-latex-extra texlive-bibtex-extra latexmk biber pandoc qrencode graphviz
 
 clean:
 	git clean -f
