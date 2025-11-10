@@ -1,0 +1,17 @@
+digraph Kolb {
+        layout=circo;
+        rankdir=LR;
+        node [shape=box, style="filled,rounded", fillcolor=lightgray];
+    
+        // Nodes for the four stages
+        AC [label="Abstract Conceptualization"];
+        AE [label="Active Experimentation"];
+        CE [label="Concrete Experience"];
+        RO [label="Reflective Observation"];
+    
+        // Edges to form the cycle
+        CE -> RO;
+        RO -> AC;
+        AC -> AE;
+        AE -> CE;
+    }
