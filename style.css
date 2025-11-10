@@ -1,0 +1,4 @@
+:root {
+  --r-heading-color: #630;
+  --r-main-color: color-mix(in hsl,var(--r-heading-color), #000 50%);
+}
