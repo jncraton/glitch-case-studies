@@ -86,7 +86,7 @@ parallaxBackgroundSize: 4096px 4096px
 
 # Case Study
 
-## Classroom Method
+## Classroom Topic
 
 - The case study is situated within a larger session on exceptions
 - The learning outcome is describing the importance of proper exception handling
@@ -194,14 +194,14 @@ parallaxBackgroundSize: 4096px 4096px
 
 ## Guiding Questions
 
-- What assumptions in the original code are violated by this interaction
-- What checks or safer memory practices could have prevented this glitch
-- What trade-offs would mitigations incur
+- What assumptions in the original code are violated by this interaction?
+- What checks or safer memory practices could have prevented this glitch?
+- What trade-offs would mitigations incur?
 
 ## Exception Handling
 
-- In Python, what exceptions would you expect if code used an unexpected value
-- How would catching these exceptions prevent crashes or corrupted state
+- In Python, what exceptions would you expect if code used an unexpected value?
+- How would catching these exceptions prevent crashes or corrupted state?
 - These questions drive discussion in the intended direction
 
 ## Further Exploitation
